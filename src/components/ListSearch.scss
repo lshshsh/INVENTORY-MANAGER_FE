@@ -1,0 +1,21 @@
+.searchGroup{
+    display: inline-block;
+    margin: 0;
+    width: 51.84rem;
+    height: 1.5rem;
+    border: 1px solid black;
+    border-left:0;
+    span{
+        margin-left: 38rem;
+        font-size: 1.3rem;
+    }
+    div{
+        position: relative;
+        display:inline-block;
+        text-align: center;
+        top:-0.34rem;
+        input{
+            width:11.87rem;
+        }
+    }
+}

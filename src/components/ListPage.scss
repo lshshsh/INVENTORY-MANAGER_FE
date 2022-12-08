@@ -1,0 +1,17 @@
+.sortBy{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    div{
+        display: inline-flex;
+        border: 1px solid black;
+        border-left: 0;
+        width: auto;
+        flex:1;
+    }
+}
+
+.list{
+    height: 31rem;
+}
+

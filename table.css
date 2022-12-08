@@ -1,0 +1,35 @@
+body{
+    flex-direction: column;
+}
+#container{
+    display:flex;
+    flex-direction: column;
+}
+tr,th,td{
+    border:1px solid black;
+}
+table:nth-child(2){
+    text-align: right;
+}
+#itemDataMenu{
+    text-align: center;
+}
+#itemData{
+    text-align: end;
+}
+table{
+    width: 1000px;
+    border-collapse: collapse;
+    
+
+}
+#listSpace{
+    height: 600px;
+    
+}
+#buttonSpace{
+    position: relative;
+}
+#buttonSpace button{
+    right: 10px;
+}

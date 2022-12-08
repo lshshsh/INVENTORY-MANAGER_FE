@@ -1,0 +1,104 @@
+.body {
+    background-color: #F7F7F7;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    min-height: 100%;
+    background: white;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.body {
+    height: 100%;
+    min-height: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-size: 15px;
+    margin: 5px;
+    margin-bottom: 30px;
+}
+
+.name {
+    margin: 4px;
+}
+
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    position: relative;
+}
+
+.btn {
+    border: none;
+    width: 100%;
+    padding: auto;
+    height: 3rem;
+    color:white;
+}
+
+#mainBox {
+    border: 1px solid #EEEEEE;
+    background-color: #999999;
+    width: calc(100% - 2rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    border: 1px solid rgb(238, 238, 238);
+    /* border-radius: 0.25rem; */
+    border-radius: 5px;
+    position: relative;
+    box-sizing: inherit;
+    width: 390px;
+}
+
+.textform {
+    width: 100%;
+    display: flex;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    margin-bottom: 1.5rem;
+}
+
+.textin {
+    width: 100%;
+    flex: 1 1 0%;
+    padding: 0px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: -0.0375rem;
+    background-color: transparent;
+    color: rgb(18, 18, 18);
+    caret-color: rgb(129, 107, 255);
+}
+
+#explain{
+    color:gray;
+    margin: 4px;
+}
+
+#check1,
+#check2,
+#check3{
+    font-size: 0.7rem;
+    margin: 0px;
+    padding: 0px;
+    color: red;
+}
+
+#completion {
+    border-radius: 0.25rem;
+}

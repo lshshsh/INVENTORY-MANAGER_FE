@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <div id="container">
+        <!-- 재고 리스트 테이블 -->
+        <div id="table">
+            <table>
+                <!-- 1행에는 품목 사세 내용 -->
+                <tr>
+                    <th colspan="9">품목 상세 내용</th>
+                </tr>
+                <tr id="itemDataMenu">
+                    <td>분류</td>
+                    <td>제조사</td>
+                    <td>물품 명</td>
+                    <td>구격</td>
+                    <td>단위</td>
+                    <td>수량</td>
+                    <td>단가</td>
+                    <td>감가상각 비율</td>
+                    <td>재고 금액</td>
+                </tr>
+                <tr id="itemData">
+                    <!-- sample -->
+                    <td>소모품</td>
+                    <td>제조사명</td>
+                    <td>물품이름</td>
+                    <td>20inch</td>
+                    <td>EA</td>
+                    <td>100</td>
+                    <td>1111</td>
+                    <td>?%/year</td>
+                    <td>123123</td>
+                </tr>
+                <!-- 빈칸 한줄 -->
+                <tr>
+
+                </tr>
+                <tr >
+                    <th colspan="9">입고 일자 별 입/출고 관리</th>
+                </tr>
+                <tr>
+                    <th colspan="4">입고날짜</th>
+                    <th>수량</th>
+                    <th>입고</th>
+                    <th>출고</th>
+                    <th colspan="2">비고</th>
+                </tr>
+                <!-- 빈칸. 여기에 물품 정보 리스트형식으로 들어감 -->
+                <tr id="listSpace">
+                    <td rowspan="100" colspan="9">
+                        
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <div id="buttonSpace">
+            <!-- 물품 정보 수정 버튼 추가 -->
+            <button>물품 정보 수정</button>
+        </div>
+    </div>
+</body>
+</html>
