@@ -1,3 +1,4 @@
+
 .sortBy{
     display: flex;
     justify-content: space-between;
@@ -12,6 +13,10 @@
 }
 
 .list{
+    overflow: scroll;
     height: 31rem;
 }
 
+.list::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}

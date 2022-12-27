@@ -1,4 +1,4 @@
-import './ListSearch.scss';
+import '../css/ListSearch.scss';
 import {MdManageSearch} from 'react-icons/md'
 import React, {useState} from 'react';
 

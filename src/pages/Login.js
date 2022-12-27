@@ -1,9 +1,9 @@
 import { useRef } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import "./Login.module.scss";
+import "../css/Login.module.scss";
 import { Link } from 'react-router-dom';
-import styles from "./Login.module.scss"
+import styles from "../css/Login.module.scss"
 
 const Login = () => {
     const idRef = useRef();
@@ -32,15 +32,15 @@ const Login = () => {
 
         axios
             .post("http://www.stock-manage-api.p-e.kr/login", {
-                id: idRef.current.value,
-                password: pwRef.current.value,
+                "id": idRef.current.value,
+                "password": pwRef.current.value,
             })
             .then((res) => {
                 console.log("handleLogin =>", res);
                 if (res.data.code === 200) {
                     window.sessionStorage.setItem("token", res.data.token); // 세션스토리지에 key : id , value : idRef.current.value로 저장
                     // sessionsStorage는 창 닫으면 사라짐, localStorage는 안사라짐
-                    navigate("/MainPage", true);
+                    navigate("/MainPage", false);
                 } else {
                     alert("아이디, 패스워드가 정확하지 않습니다.");
                     idRef.current.value = "";

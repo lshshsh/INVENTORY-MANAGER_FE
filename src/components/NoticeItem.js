@@ -1,20 +1,25 @@
-import './NoticeItem.module.scss';
-import styles from './NoticeItem.module.scss';
+import '../css/NoticeItem.module.scss';
+import styles from '../css/NoticeItem.module.scss';
+import React, { useState } from 'react';
+import NoticeModal from './popup/NoticeModal'
 
 
-const NoticeItem = ({notice}) => {
-    
-    const {com, content, createdAt, owner, title} = notice;
+const NoticeItem = ({ notice }) => {
+    const [modalOpen, setModalOpen] = useState(false);
 
-    const onclick = () => {
+    const openModal = () => {
+        setModalOpen(true);
+    };
+    const closeModal = () => {
+        setModalOpen(false);
+    };
 
-    }
-
-    return(
+    return (
         <div className={styles.body}>
-            <div onClick={onclick}>
-                 {title}
+            <div onClick={openModal}>
+                <b>{notice.title}</b>
             </div>
+            <NoticeModal notice={notice} open={modalOpen} close={closeModal}></NoticeModal>
         </div>
     )
 }

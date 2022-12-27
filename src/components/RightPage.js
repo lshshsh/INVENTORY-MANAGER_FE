@@ -1,4 +1,4 @@
-import './RightPage.scss';
+import '../css/RightPage.scss';
 
 const RightPage = ({children}) => {
     return (

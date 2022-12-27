@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
-import './ShowCom.scss'
+import '../css/ShowCom.scss'
 
 const ShowCom = ({ user }) => {
     console.log(user);
  
     return (
         <div className="comInfo">           
-            {user[0]}<br />
-            {user[2]} {user[1]}님
+            <b>{user[0]}</b><br />
+            <b>{user[2]} {user[1]}</b>님
         </div>
     )
 }

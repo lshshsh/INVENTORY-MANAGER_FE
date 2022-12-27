@@ -1,0 +1,50 @@
+.body{
+    flex-direction: column;
+    background: #2A4E6C;
+}
+
+#container{
+    display:flex;
+    flex-direction: column;
+}
+tr,th,td{
+    border:1px solid black;
+}
+table:nth-child(2){
+    text-align: right;
+}
+#itemDataMenu{
+    text-align: center;
+}
+#itemData{
+    text-align: end;
+}
+table{
+    width: 829px;
+    border-collapse: collapse;
+}
+#listSpace{
+    height: 600px;
+    
+}
+#buttonSpace{
+    position: relative;
+    margin:0;
+    margin-left: 80px;
+}
+#buttonSpace button{
+    right: 10px;
+}
+
+.close{
+    margin-left: 780px;
+}
+
+#tit{
+    padding-left: 330px;
+}
+
+.cg{
+    border: 1px solid black;
+    margin-left: 560px;
+}

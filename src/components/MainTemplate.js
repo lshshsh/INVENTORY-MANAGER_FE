@@ -1,4 +1,4 @@
-import './MainTemplate.scss';
+import '../css/MainTemplate.scss';
 
 const MainTemplate = ({children}) => {
     return (

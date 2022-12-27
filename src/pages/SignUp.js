@@ -1,8 +1,8 @@
-import './SignUp.module.scss';
+import '../css/SignUp.module.scss';
 import React, { useRef, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import styles from "./SignUp.module.scss"
+import styles from "../css/SignUp.module.scss"
 
 const SignUp = () => {
     let comNameRef = useRef();
@@ -139,10 +139,10 @@ const SignUp = () => {
 
         axios
             .post("http://www.stock-manage-api.p-e.kr/signup/admin", {
-                comName: comNameRef.current.value,
-                name: nameRef.current.value,
-                id: idRef.current.value,
-                password: pwRef.current.value,
+                "comName": comNameRef.current.value,
+                "name": nameRef.current.value,
+                "id": idRef.current.value,
+                "password": pwRef.current.value,
             })
             .then((res) => {
                 console.log(res);

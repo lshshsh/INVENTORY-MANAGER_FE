@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './ShowTime.scss'
+import '../css/ShowTime.scss'
 
 const ShowTime = () => {
 
@@ -12,11 +12,11 @@ const ShowTime = () => {
         let min = dt.getMinutes();
         let sec = dt.getSeconds();
 
-        month > 10 || (month = '0' + month);
-        date > 10 || (date = '0' + date);
-        hour > 10 || (hour = '0' + hour);
-        min > 10 || (min = '0' + min);
-        sec > 10 || (sec = '0' + sec);
+        month >= 10 || (month = '0' + month);
+        date >= 10 || (date = '0' + date);
+        hour >= 10 || (hour = '0' + hour);
+        min >= 10 || (min = '0' + min);
+        sec >= 10 || (sec = '0' + sec);
 
         let nowDate = year + '/' + month + '/' + date;
         let nowTime = hour + ':' + min + ':' + sec;
